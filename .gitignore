@@ -1,2 +1,5 @@
 .env
 venv/
+airflow-venv/
+constraints.txt
+run.ps1
