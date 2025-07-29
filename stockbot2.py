@@ -6,6 +6,10 @@ from discord.ext.commands import cooldown, BucketType
 import yfinance as yf
 from dotenv import load_dotenv
 import datetime
+from keep_alive import keep_alive
+
+# Replit stay awake
+keep_alive()
 
 # Load environment variables
 load_dotenv()
@@ -368,7 +372,8 @@ async def ping(ctx):
     author = ctx.author.nick
     guild = ctx.guild
     channel = ctx.channel.name
-    await ctx.send(f"{author} has made a change in {channel} in {guild}.")
+    channel_id = ctx.channel.id
+    await ctx.send(f"{author} has made a change in {channel} in {guild}. channel_id:{channel_id}")
 
 
 # Command: !help or !commands
