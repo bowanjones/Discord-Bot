@@ -1,3 +1,5 @@
+### This is a discord bot I created with the help of chatgpt in 1 hour for my King Discord Server. Check out the video here: https://www.youtube.com/watch?v=b8xLcuNsK88
+
 import os
 import json
 import discord
